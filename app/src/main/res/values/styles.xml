@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BorderlessButton13Stones" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.HeadlineMedium</item>
+        <item name="android:textColor">@color/button_color_selector</item>
+        <item name="android:onClick">pick123</item>
+    </style>
+
+    <style name="TextViewStatistics">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="android:textAppearance">@style/TextAppearance.Material3.ActionBar.Subtitle
+        </item>
+    </style>
+
+    <style name="TextViewStatistics.PrimaryTextColor">
+        <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="TextViewStatistics.PrimaryTextColor.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextViewStatistics.SecondaryTextColor">
+        <item name="android:textColor">?attr/colorSecondary</item>
+    </style>
+
+    <style name="TextViewStatistics.SecondaryTextColor.Bold">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+</resources>

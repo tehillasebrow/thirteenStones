@@ -1,0 +1,117 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_activity_margin"
+    tools:showIn="@layout/content_statistics">
+
+
+    <TextView
+        android:id="@+id/tv_label_games_played"
+        style="@style/TextViewStatistics.PrimaryTextColor.Bold"
+        android:layout_marginTop="@dimen/default_activity_margin"
+        android:text="@string/games_played"
+        app:layout_constraintEnd_toStartOf="@+id/tv_data_games_played"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_data_games_played"
+        style="@style/TextViewStatistics.PrimaryTextColor"
+        android:layout_marginStart="@dimen/default_activity_margin"
+        android:layout_marginTop="@dimen/default_activity_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_label_games_played"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="18" />
+
+
+    <TextView
+        android:id="@+id/tv_label_header_player"
+        style="@style/TextViewStatistics.SecondaryTextColor.Bold"
+        android:layout_marginStart="@dimen/default_activity_margin"
+        android:layout_marginLeft="@dimen/default_activity_margin"
+        android:layout_marginEnd="@dimen/default_activity_margin"
+        android:layout_marginRight="@dimen/default_activity_margin"
+        android:text="@string/player_number"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_label_header_wins"
+        app:layout_constraintEnd_toStartOf="@+id/tv_label_header_wins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_header_wins" />
+
+    <TextView
+        android:id="@+id/tv_label_header_wins"
+        style="@style/TextViewStatistics.SecondaryTextColor.Bold"
+        android:layout_marginTop="@dimen/double_activity_margin"
+        android:ellipsize="start"
+        android:maxLines="2"
+        android:text="@string/games_won"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_games_played" />
+
+    <TextView
+        android:id="@+id/tv_label_header_win_pct"
+        style="@style/TextViewStatistics.SecondaryTextColor.Bold"
+        android:layout_marginStart="@dimen/default_activity_margin"
+        android:layout_marginLeft="@dimen/default_activity_margin"
+        android:layout_marginEnd="@dimen/default_activity_margin"
+        android:layout_marginRight="@dimen/default_activity_margin"
+        android:text="@string/percent_won"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_label_header_wins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_label_header_wins"
+        app:layout_constraintTop_toTopOf="@+id/tv_label_header_wins" />
+
+    <TextView
+        android:id="@+id/tv_label_player1_number"
+        style="@style/TextViewStatistics.SecondaryTextColor"
+        android:text="@string/one"
+        app:layout_constraintEnd_toEndOf="@+id/tv_label_header_player"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_header_player"
+        app:layout_constraintTop_toTopOf="@+id/tv_data_player1_wins" />
+
+    <TextView
+        android:id="@+id/tv_data_player1_wins"
+        style="@style/TextViewStatistics.SecondaryTextColor"
+        android:layout_marginTop="@dimen/default_activity_margin"
+        app:layout_constraintEnd_toEndOf="@+id/tv_label_header_wins"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_header_wins"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label_header_wins"
+        tools:text="6" />
+
+    <TextView
+        android:id="@+id/tv_data_player1_win_percent"
+        style="@style/TextViewStatistics.SecondaryTextColor"
+        app:layout_constraintEnd_toEndOf="@+id/tv_label_header_win_pct"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_header_win_pct"
+        app:layout_constraintTop_toTopOf="@+id/tv_data_player1_wins"
+        tools:text="33%" />
+
+    <TextView
+        android:id="@+id/tv_label_player2_number"
+        style="@style/TextViewStatistics.SecondaryTextColor"
+        android:text="@string/two"
+        app:layout_constraintEnd_toEndOf="@+id/tv_label_player1_number"
+        app:layout_constraintTop_toTopOf="@+id/tv_data_player2_wins" />
+
+    <TextView
+        android:id="@+id/tv_data_player2_wins"
+        style="@style/TextViewStatistics.SecondaryTextColor"
+        android:layout_marginTop="@dimen/default_activity_margin"
+        app:layout_constraintEnd_toEndOf="@+id/tv_label_header_wins"
+        app:layout_constraintStart_toStartOf="@+id/tv_label_header_wins"
+        app:layout_constraintTop_toBottomOf="@+id/tv_data_player1_wins"
+        tools:text="9" />
+
+    <TextView
+        android:id="@+id/tv_data_player2_win_percent"
+        style="@style/TextViewStatistics.SecondaryTextColor"
+        app:layout_constraintStart_toStartOf="@+id/tv_data_player1_win_percent"
+        app:layout_constraintTop_toTopOf="@+id/tv_data_player2_wins"
+        tools:text="50%" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

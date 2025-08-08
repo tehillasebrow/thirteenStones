@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.thirteenstones.activities.MainActivity">
+    <item
+        android:id="@+id/action_new_game"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="@string/new_game"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_statistics"
+        android:icon="@android:drawable/ic_menu_recent_history"
+        android:title="@string/view_statistics"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_reset_stats"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="@string/reset_statistics"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/about"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,22 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:alpha=".9"
+    app:cardBackgroundColor="@color/backgroundDefaultColor"
+    app:layout_constrainedHeight="true"
+    app:layout_constraintBottom_toBottomOf="@+id/card_image_view_stones"
+    app:layout_constraintLeft_toLeftOf="@+id/card_image_view_stones"
+    app:layout_constraintRight_toRightOf="@+id/card_image_view_stones"
+    app:layout_constraintTop_toTopOf="@+id/card_image_view_stones"
+    tools:showIn="@layout/content_statistics">
+
+   	<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <include layout="@layout/statistics_include_card_stats_data" />
+
+</ScrollView>
+</com.google.android.material.card.MaterialCardView>

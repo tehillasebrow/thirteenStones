@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="default_activity_margin">8dp</dimen>
+    <dimen name="double_activity_margin">16dp</dimen>
+    <dimen name="default_button_text_margin">26dp</dimen>
+    <dimen name="slim_margin">4dp</dimen>
+
+</resources>
